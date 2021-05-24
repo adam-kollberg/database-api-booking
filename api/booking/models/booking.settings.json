@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bookings",
+  "info": {
+    "name": "Booking",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "namn": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "adress": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "integer"
+    },
+    "date": {
+      "type": "datetime"
+    },
+    "price": {
+      "type": "integer"
+    },
+    "product": {
+      "model": "product",
+      "via": "bookings"
+    },
+    "users_permissions_user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "bookings"
+    },
+    "token": {
+      "type": "string"
+    }
+  }
+}

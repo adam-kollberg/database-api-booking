@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/teraphists",
+      "handler": "teraphist.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/teraphists/count",
+      "handler": "teraphist.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/teraphists/:id",
+      "handler": "teraphist.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/teraphists",
+      "handler": "teraphist.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/teraphists/:id",
+      "handler": "teraphist.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/teraphists/:id",
+      "handler": "teraphist.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
