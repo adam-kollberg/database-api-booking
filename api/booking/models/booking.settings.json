@@ -41,6 +41,9 @@
     },
     "token": {
       "type": "string"
+    },
+    "teraphist": {
+      "model": "teraphist"
     }
   }
 }
