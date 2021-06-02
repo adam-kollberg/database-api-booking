@@ -1,0 +1,15 @@
+---
+application:
+  name: "database-api-booking"
+  project: "mind-strapi"
+  organization: "QoveryCommunity"
+databases:
+- type: "POSTGRESQL"
+  name: "mind"
+  version: "10"
+routers:
+- name: "main-database-api-booking"
+  routes:
+  - application_name: "database-api-booking"
+    paths:
+    - "/*"
